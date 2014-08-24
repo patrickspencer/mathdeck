@@ -2,7 +2,7 @@ Mathbook
 ========
 
 Mathbook is a program suite for managing the computations involved in
-writing displaying, and grading mathematical based homework
+writing, displaying, and grading mathematical based homework
 problems. It is written to abstract the computations so that other
 responsibilities such as managing users and grades can be left to more
 apt systems such as online course management systems.

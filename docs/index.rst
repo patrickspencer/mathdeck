@@ -15,5 +15,7 @@ Contents
    :maxdepth: 2
 
    _content/about
+   _content/problem-files
    _content/api
+   _content/todo
 
