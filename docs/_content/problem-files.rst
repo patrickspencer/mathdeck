@@ -16,7 +16,7 @@ Example problem file::
 
   # problem-library/example1.py.pf
 
-  import mathbook
+  import mathdeck
 
   ans1 = 5
   a = ans1*3
@@ -31,8 +31,8 @@ A more advanced problem file::
 
   # problem-library/example3.py.pf
 
-  from mathbook.helpers import random as rand
-  from sympy import var, expand, latex 
+  from mathdeck.helpers import random as rand
+  from sympy import var, expand, latex
 
   metadata = {
     'author': 'Bob Hope',
@@ -57,9 +57,9 @@ A more advanced problem file::
   template = r"""
   Find the roots of the polynomial $p(x) = {{p | format=latex}}$:
   """
-  
+
   ans1 = {
-    'value': root1,   
+    'value': root1,
     'type': 'number',
     'domain': 'real'
   }

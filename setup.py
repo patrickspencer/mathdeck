@@ -6,13 +6,13 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name='mathbook',
+    name='mathdeck',
     version='0.0.1-alpha',
     author='Patrick Spencer',
     license='GPLv2.0',
-    url='https://github.com/compass-math/mathbook',
+    url='https://github.com/compass-math/mathdeck',
     author_email='patrick.spencer@mail.mizzou.edu',
-    description='Mathbook is a program suite for managing the computations'
+    description='Mathdeck a program suite for managing the computations'
                 'involved in writing displaying, and grading mathematical'
                 'based homework problems. It is written to abstract the'
                 'computations so that other responsibilities such as managing'
@@ -21,7 +21,7 @@ setup(
     long_description=open('README.rst').read(),
     zip_safe=False,
     packages=[
-        'mathbook',
+        'mathdeck',
         'tests',
     ],
     classifiers=[

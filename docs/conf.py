@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Mathbook documentation build configuration file, created by
+# Mathdeck documentation build configuration file, created by
 # sphinx-quickstart on Fri Aug 22 21:51:23 2014.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Mathbook'
+project = u'mathdeck'
 copyright = u'2014, Patrick Spencer'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -167,7 +167,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Mathbookdoc'
+htmlhelp_basename = 'Mathdeckdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -186,7 +186,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'Mathbook.tex', u'Mathbook Documentation',
+  ('index', 'Mathdeck.tex', u'Mathdeck Documentation',
    u'Patrick Spencer', 'manual'),
 ]
 
@@ -216,7 +216,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'mathbook', u'Mathbook Documentation',
+    ('index', 'mathdeck', u'Mathdeck Documentation',
      [u'Patrick Spencer'], 1)
 ]
 
@@ -230,8 +230,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Mathbook', u'Mathbook Documentation',
-   u'Patrick Spencer', 'Mathbook', 'One line description of project.',
+  ('index', 'Mathdeck', u'Mathdeck Documentation',
+   u'Patrick Spencer', 'Mathdeck', 'One line description of project.',
    'Miscellaneous'),
 ]
 

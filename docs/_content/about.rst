@@ -1,7 +1,7 @@
 About
 =====
 
-Mathbook is a program suite for managing the computations involved in
+Mathdeck is a program suite for managing the computations involved in
 writing displaying, and grading mathematical based homework
 problems. It is written to abstract the computations so that other
 responsibilities such as managing users and grades can be left to more
@@ -29,6 +29,6 @@ Goals
 License
 -------
 
-Mathbook is licensed under the GNU General Public Licence version 2.0. See
+Mathdeck is licensed under the BSD license. See
 LICENSE file for more details.
 

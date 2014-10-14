@@ -3,7 +3,7 @@
 import os
 import sys
 import argparse
-from symbook import parse
+from mathdeck import parse
 
 
 sys.dont_write_bytecode = True
@@ -12,7 +12,7 @@ LIBRARY_DIR = os.path.abspath(os.path.join(
         os.path.dirname( __file__   ), '..', 'problem-library'))
 
 parser = argparse.ArgumentParser(
-                description='Process symbook problem file into html.')
+                description='Process mathdeck problem file into html.')
 parser.add_argument('file', type=str, help='input problem file')
 
 args = parser.parse_args()

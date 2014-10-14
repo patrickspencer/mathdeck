@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-import mathbook
+import mathdeck
 
-class TestMathBookCheckInput(unittest.TestCase):
+class TestMathdeckCheckInput(unittest.TestCase):
 
     def test_check_func(self):
-        mathbook.check
+        mathdeck.check
 
 if __name__ == '__main__':
     unittest.main()
