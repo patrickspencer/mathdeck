@@ -20,4 +20,6 @@ __author__ = 'Patrick Spencer'
 __license__ = 'BSD'
 __copyright__ = 'Copyright 2014 Patrick Spencer'
 
+from .api import *
+
 

@@ -18,5 +18,3 @@ parser.add_argument('file', type=str, help='input problem file')
 args = parser.parse_args()
 FILE_SOURCE = os.path.join(LIBRARY_DIR,args.file)
 print FILE_SOURCE
-        )
-    ))

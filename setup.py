@@ -9,7 +9,7 @@ setup(
     name='mathdeck',
     version='0.0.1-alpha',
     author='Patrick Spencer',
-    license='GPLv2.0',
+    license='BSD 3-Clause',
     url='https://github.com/compass-math/mathdeck',
     author_email='patrick.spencer@mail.mizzou.edu',
     description='Mathdeck a program suite for managing the computations'
@@ -17,7 +17,7 @@ setup(
                 'based homework problems. It is written to abstract the'
                 'computations so that other responsibilities such as managing'
                 'users and grades can be left to more apt systems such as'
-                'online course management systems.'
+                'online course management systems.',
     long_description=open('README.rst').read(),
     zip_safe=False,
     packages=[
