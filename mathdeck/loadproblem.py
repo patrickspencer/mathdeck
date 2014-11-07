@@ -15,4 +15,3 @@ if sys.version_info[0] == 3:
     loader = importlib.machinery.SourceFileLoader("hello.py", target_dir)
     foo = loader.load_module()
 
-
