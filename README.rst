@@ -30,9 +30,13 @@ Programming Goals
 Support
 -------
 
-Documentation source files are found in the `docs/` folder. Compiled html pages are hosted on Read the Docs here: `http://mathdeck.readthedocs.org/ <http://mathdeck.readthedocs.org/>`_
+Source files are hosted on `Github <https://github.com/patrickspencer/mathdeck/>`_ and `PyPI <https://pypi.python.org/pypi/mathdeck/>`_.
 
-Issues are hosted on Github here: `https://github.com/patrickspencer/mathdeck/issues <https://github.com/patrickspencer/mathdeck/issues>`_
+Documentation source files are found in the `docs/` folder within the source. Compiled documentation files are hosted on `Read the Docs <http://mathdeck.readthedocs.org/>`_.
+
+Issues are hosted on `Github Issues <https://github.com/patrickspencer/mathdeck/issues/>`_.
+
+Discussion is on `Google Groups <https://groups.google.com/d/forum/mathdeck>`_.
 
 Requirements
 ------------
