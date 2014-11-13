@@ -10,7 +10,7 @@ setup(
     version='0.0.1-alpha',
     author='Patrick Spencer',
     license='BSD 3-Clause',
-    url='https://github.com/compass-math/mathdeck',
+    url='https://github.com/patrickspencer/mathdeck',
     author_email='patrick.spencer@mail.mizzou.edu',
     description='Mathdeck a program suite for managing the computations'
                 'involved in writing displaying, and grading mathematical'

@@ -29,7 +29,7 @@ Goals
 License
 -------
 
-Mathdeck is licensed under the BSD license. See
+Mathdeck is licensed under the BSD 3-Clause license. See
 LICENSE file for more details.
 
 Requirements
