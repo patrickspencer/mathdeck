@@ -25,9 +25,10 @@ setup(
         'tests',
     ],
     classifiers=[
-        'Development Status :: 1 - planning',
+        'Development Status :: 1 - Planning',
         'Environment :: Console',
-        'Intended Audience :: Developers',
+        'Intended Audience :: Education',
+        'Intended Audience :: Science/Research',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
