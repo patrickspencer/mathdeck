@@ -7,7 +7,7 @@ except ImportError:
 
 setup(
     name='mathdeck',
-    version='0.0.1-alpha',
+    version='0.0.1-planning',
     author='Patrick Spencer',
     license='BSD 3-Clause',
     url='https://github.com/patrickspencer/mathdeck',
@@ -25,14 +25,16 @@ setup(
         'tests',
     ],
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 1 - planning',
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GPL V2.0 License',
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+        'Topic :: Scientific/Engineering',
+        'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     install_requires=[

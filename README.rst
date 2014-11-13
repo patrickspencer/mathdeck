@@ -3,7 +3,7 @@ Mathdeck
 
 Mathdeck is a program suite for managing the computations involved in
 writing, displaying, and grading mathematical based homework
-problems. It is written to abstract the computations so that other
+problems. It is written to abstract away computations so that other
 responsibilities such as managing users and grades can be left to more
 apt systems such as online course management systems.
 
@@ -56,5 +56,5 @@ Mathdeck is short for math display and check, the program's two main functions.
 License
 -------
 
-Mathdeck is licensed under the BSD 3-Clause license. See
-LICENSE file for more details.
+Mathdeck is licensed under the BSD 3-Clause license. See LICENSE file for more
+details.
