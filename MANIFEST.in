@@ -1,0 +1,9 @@
+include LICENSE
+include README.rst
+include CONTRIBUTING.rst
+include AUTHORS.rst
+include HISTORY.rst
+include tests/run-test.sh
+recursive-include doc *
+prune doc/_build
+

@@ -41,7 +41,7 @@ Discussion is on `Google Groups <https://groups.google.com/d/forum/mathdeck>`_.
 Requirements
 ------------
 
-- Python 2.7+
+- Python 2.7+ or 3+
 - Sympy 0.7.5+ (for writing and checking problems)
 - Jinja2 2.7.3+ (for displaying problems)
 
@@ -54,33 +54,25 @@ development purposes run :code:`python setup.py develop` in the command line in
 the root of the project folder (the folder with setup.py). To run the tests run
 :code:`python -m unnittest discover` (requires python 2.7+) in the root folder.
 
-Contribute
+Contributing
 ----------
 
-#. Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug.
-#. If you feel uncomfortable or uncertain about an issue or your changes, feel free to email Patrick Spencer at patrick.spencer at mail.mizzou.edu and he will happily help you via email, irc, or whatever you are comfortable with.
-#. Fork `the repository`_ on GitHub to start making your changes to the **master** branch (or branch off of it).
-#. Write a test which shows that the bug was fixed or that the feature works as expected.
-#. Send a pull request and bug the maintainer until it gets merged and published. :) Make sure to add yourself to AUTHORS.rst.
+There are two ways to contribute:
+
+
+#. Via Github issues
+#. Sending git patches through email
+
+See `CONTRIBUTING.rst <https://github.com/patrickspencer/mathdeck/blob/master/CONTRIBUTING.rst>`_ for more information.
 
 About the name
 --------------
 
 Mathdeck is short for math display and check, the program's two main functions.
 
-Acknowledgements
-----------------
-
-We would like to thank the members at `Sympy
-<http://sympy.org/>`_ for creating a viable computer algebra system. We would also
-like to thank the people at `Requests
-<https://github.com/kennethreitz/requests/>`_ for
-exemplifying what a good python project should look like.
-Some of the setup to this project was based on their
-practices and we hope imitation is form a flattery.
-
 License
 -------
 
 Mathdeck is licensed under the BSD 3-Clause license. See
-LICENSE file for more details.
+`LICENSE <https://github.com/patrickspencer/mathdeck/blob/master/LICENSE>`_ file for more details.
+
