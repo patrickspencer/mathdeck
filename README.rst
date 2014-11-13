@@ -7,30 +7,32 @@ problems. It is written to abstract away computations so that other
 responsibilities such as managing users and grades can be left to more
 apt systems such as online course management systems.
 
-Features
---------
+Intended features
+-----------------
 
-- A system for writing homework problems.
+- Tool suite and standard spec for writing homework problems.
 - A system for displaying problem files.
 - A system for measuring how close a proposed solution is to a predefined
   solution and offering suggestions for improvement to lead a student in
   the right direction.
 
-Goals
------
+Programming Goals
+-----------------
 
-- Clear API
-- Clear documentation.
+- Clear developer API.
+- Clear and comprehensive documentation.
 - Comprehensive test suite.
 - Creating problems should be as easy as possible for people who
   are mathematically inclined and would be able to pick up the basics of
   python in a couple days.
-- Python 2.7 and 3+ support
+- Python 2.7+ and 3+ support
 
-Documentation
--------------
+Support
+-------
 
 Documentation source files are found in the `docs/` folder. Compiled html pages are hosted on Read the Docs here: `http://mathdeck.readthedocs.org/ <http://mathdeck.readthedocs.org/>`_
+
+Issues are hosted on Github here: `https://github.com/patrickspencer/mathdeck/issues <https://github.com/patrickspencer/mathdeck/issues>`_
 
 Requirements
 ------------
@@ -47,6 +49,7 @@ separate virtual environment before installing. To install mathcheck for
 development purposes run :code:`python setup.py develop` in the command line in
 the root of the project folder (the folder with setup.py). To run the tests run
 :code:`python -m unnittest discover` (requires python 2.7+) in the root folder.
+
 
 About the name
 --------------
