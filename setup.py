@@ -16,7 +16,9 @@ setup(
                 involved in writing displaying, and grading mathematical
                 based homework problems.
                 """,
-    long_description=open('README.rst').read(),
+    long_description=(read('README.rst') + '\n\n' +
+                      read('HISTORY.rst') + '\n\n' +
+                      read('AUTHORS.rst')),
     zip_safe=False,
     packages=[
         'mathdeck',
