@@ -6,13 +6,14 @@ mathdeck.api
 
 This module implements the Mathdeck API.
 
-:copyright: (c) 2014 by Patrick Spencer.
-:license: BSD3, see LICENSE for more details.
+:copyright: (c) 2015 by Patrick Spencer.
+:license: Apache 2.0, see LICENSE for more details.
 
 """
 
 def display(file, seed, number):
-    """Constructs and sends a :class:`Problem <Problem>`.
+    """
+    Constructs and sends a :class:`Problem <Problem>`.
     Returns :class:`Problem <Problem>` object.
 
     :param file: method for the new :class:`Request` object.
@@ -26,25 +27,13 @@ def display(file, seed, number):
     """
     from jinja2 import Template
     template = u"""
-      <htmllk>
+      <html>
     """
     m = Template(u"{% set a, b = 'foo', 'föö' %}")
 
     return file, seed, number
 
-def check(file, seed, **kwargs):
-    """Constructs and sends a :class:`Request <Request>`.
-    Returns :class:`Response <Response>` object.
+def check(module, seed):
+    _seed_holding_module = type('module', (), {'_seed': seed})
+    sys.modules['_seed_holding_module'] = _seed_holding_module
 
-    :param method: method for the new :class:`Request` object.
-    :param seed: Seed number to used to base random number generation off of
-
-    Usage::
-
-      >>> import mathdeck
-      >>> output = mathdeck.display('file.py.problem', 12345)
-
-    """
-
-    session = sessions.Session()
-    return session.request(method=method, url=url, **kwargs)
