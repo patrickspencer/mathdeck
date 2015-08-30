@@ -32,5 +32,7 @@ ans1 = {
     'type': 'function',
 }
 
-answers = [ans1]
+answers = {
+    "ans1": ans1
+    }
 
