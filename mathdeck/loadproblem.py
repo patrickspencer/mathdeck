@@ -15,17 +15,14 @@ import os
 import sys
 
 # Load problem file as
-def load_file_as_module(full_dir, file_name):
+def load_file_as_module(file):
     """
     Load problem file as a module.
 
-    :param problem_dir: The directory where the problem file is
-    :param file_name: The name of the file
+    :param file: The full path to the problem file
 
     returns a module represented by the problem file
     """
-
-    file = os.path.join(full_dir,file_name)
 
     # Create a new module to hold the seed variable so
     # the loaded module can reference the seed variable
@@ -37,7 +34,7 @@ def load_file_as_module(full_dir, file_name):
     if sys.version_info[0] == 3:
         import importlib.machinery
         problem_module = importlib.machinery \
-                                  .SourceFileLoader("prob_module", file) \
+                                  .SourceFileLoader("prob_module",file) \
                                   .load_module()
 
     try:
