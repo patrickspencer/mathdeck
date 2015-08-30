@@ -37,14 +37,7 @@ import random as stdrandom
 
 
 class Random(stdrandom.Random):
-
-    # used to count how many times the random function has been called
     count = 0
-
-    # When rand.Random() is called it will load the current seed in the currect
-    # context from a module called _seed_holding_module which has an attribute
-    # called _seed. This is so a program can pass a seed value to a problem
-    # file.
 
     def __init__(self):
         import importlib
@@ -54,16 +47,27 @@ class Random(stdrandom.Random):
             self._seed_value = 1
 
     def random(self):
+        """
+        When rand.Random() is called it will load the current seed in the currect
+        context from a module called _seed_holding_module which has an attribute
+        called _seed. This is so a program can pass a seed value to a problem file.
+        """
         stdrandom.seed(self._seed_value + self.count)
-        # line = "seed value: " + str(self.seed_value + self.count)
         output = stdrandom.random()
         self.count += 1
         return output
 
     def randint(self,a,b):
         stdrandom.seed(self._seed_value + self.count)
-        # line = "seed value: " + str(self.seed_value + self.count)
         output = stdrandom.randint(a,b)
         self.count += 1
         return output
+
+def make_seed_holding_module(seed):
+    """
+    makes a module to hold the given seed value so other functions
+    can retrieve seed value without begin given the seed directly.
+    """
+    _seed_holding_module = type('module', (), {'_seed': seed})
+    sys.modules['_seed_holding_module'] = _seed_holding_module
 
