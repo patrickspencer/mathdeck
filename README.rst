@@ -73,6 +73,6 @@ Mathdeck is short for math display and check, the program's two main functions.
 License
 -------
 
-Mathdeck is licensed under the BSD 3-Clause license. See
+Mathdeck is licensed under the Apache 2.0 license. See
 `LICENSE <https://github.com/patrickspencer/mathdeck/blob/master/LICENSE>`_ file for more details.
 
