@@ -1,4 +1,4 @@
-from sympy import symbols, cos, sin
+from sympy import symbols, cos, sin, latex
 from mathdeck import rand
 
 metadata = {
@@ -11,23 +11,20 @@ metadata = {
 
 r = rand.Random()
 
-# # choose three random integers between 0 and 10.
-# root1 = r.randint(0,10)
-# root2 = r.randint(0,10)
-# root3 = r.randint(0,10)
+# choose three random integers between 0 and 10.
+root1 = r.randint(0,10)
+root2 = r.randint(0,10)
+root3 = r.randint(0,10)
 #
 # # specify our variables
 x = symbols('x')
-#
-# # define a polynomial whose roots are root1 and root2 and expand it
-#
-# # define what the output will look like
-# template = r"""
-# Find the roots of the polynomial $p(x) = {{p | format=latex}}$:
-# """
-#
+p = ((x-root1)*(x-root2)).expand(basic=True)
+
+template_variables = {
+    'p': latex(p),
+    }
+
 ans1 = {
-    'name': 'ans1',
     'value': cos(x)**2-sin(x)**2,
     'type': 'function',
 }
