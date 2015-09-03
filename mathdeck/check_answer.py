@@ -2,7 +2,7 @@
 
 """
 mathdeck.check
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 This module checks if a user submitted answer is equal to an
 answer defined in a problem file.

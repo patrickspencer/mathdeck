@@ -2,7 +2,7 @@
 
 """
 mathdeck.rand
-~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 This module redefines the random module to base the
 generatation of random numbers off how many times the random
