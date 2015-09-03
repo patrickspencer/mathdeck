@@ -2,7 +2,7 @@
 
 """
 mathdeck.loadproblem
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 This module loads a problem file as a module.
 
@@ -15,7 +15,7 @@ import os
 import sys
 
 # Load problem file as
-def load_file_as_module(file):
+def load_file_as_module(file_path):
     """
     Load problem file as a module.
 
@@ -29,12 +29,12 @@ def load_file_as_module(file):
 
     if sys.version_info[0] == 2:
         import imp
-        problem_module = imp.load_source('prob_module',file)
+        problem_module = imp.load_source('prob_mod_pkg',file_path)
 
     if sys.version_info[0] == 3:
         import importlib.machinery
         problem_module = importlib.machinery \
-                                  .SourceFileLoader("prob_module",file) \
+                                  .SourceFileLoader('prob_mod_pkg',file_path) \
                                   .load_module()
 
     try:
