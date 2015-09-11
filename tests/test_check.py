@@ -2,8 +2,9 @@
 
 import unittest
 import os
-from mathdeck import check_answer, loadproblem
+from mathdeck import check, load
 from sympy import symbols, expand
+
 
 class TestCheckAnswerModule(unittest.TestCase):
 
@@ -14,12 +15,12 @@ class TestCheckAnswerModule(unittest.TestCase):
     def test_compare_functions_equal(self):
         a = self.x+1
         b = 1+self.x
-        self.assertTrue(check_answer.compare_functions(a,b))
+        self.assertTrue(check.compare_functions(a,b))
 
     def test_compare_functions_not_equal(self):
         a = self.x+1
         b = self.x
-        self.assertFalse(check_answer.compare_functions(a,b))
+        self.assertFalse(check.compare_functions(a,b))
 
 
 if __name__ == '__main__':

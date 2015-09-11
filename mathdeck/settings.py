@@ -16,8 +16,8 @@ import json
 import os
 
 # use as follows:
-# from mathdeck import settings
-# dir = settings.problems_libs['main']
+# > from mathdeck import settings
+# > dir = settings.problems_libs['main']
 home = os.path.expanduser('~')
 settings_file = os.path.join(home,'mathdeck_settings.json')
 

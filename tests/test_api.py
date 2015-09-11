@@ -2,7 +2,7 @@
 
 import unittest
 import os
-from mathdeck import check_answer, loadproblem
+from mathdeck import check, load
 from sympy import symbols, expand
 
 class TestApi(unittest.TestCase):

@@ -11,7 +11,7 @@ This module implements the Mathdeck API.
 
 """
 
-def display(file, seed, number):
+def display_problem(file, seed):
     """
     Constructs and sends a :class:`Problem <Problem>`.
     Returns :class:`Problem <Problem>` object.
@@ -31,9 +31,9 @@ def display(file, seed, number):
     """
     m = Template(u"{% set a, b = 'foo', 'föö' %}")
 
-    return file, seed, number
+    return file, seed
 
-def check(module, seed):
+def check_problem(module, seed):
     _seed_holding_module = type('module', (), {'_seed': seed})
     sys.modules['_seed_holding_module'] = _seed_holding_module
 

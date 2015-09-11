@@ -1,5 +1,5 @@
 from sympy import symbols, cos, sin, latex
-from mathdeck import rand
+from mathdeck import rand, answer
 
 metadata = {
   'author': 'Bob Hope',
@@ -24,12 +24,19 @@ template_variables = {
     'p': latex(p),
     }
 
-ans1 = {
-    'value': cos(x)**2-sin(x)**2,
-    'type': 'function',
-}
+a1 = answer.Answer()
+a1.value = cos(x)**2-sin(x)**2
+a1.type = 'function'
+a1.variables = ['x']
+a1.domain = 'R'
+
+a2 = answer.Answer()
+a2.value = 'x+1'
+a2.type = "function"
+a2.variables = ['x','y']
 
 answers = {
-    "ans1": ans1
+    'ans1': a1,
+    'ans2': a2
     }
 

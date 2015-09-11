@@ -14,9 +14,7 @@ answer defined in a problem file.
 
 import os
 import sys
-from mathdeck import loadproblem, settings
-from sympy.parsing.sympy_parser import parse_expr
-from sympy import symbols, cos, sin
+from mathdeck import load, settings
 
 
 def compare_functions(func1,func2):
@@ -24,7 +22,6 @@ def compare_functions(func1,func2):
         return 1
     else:
         return 0
-
 
 def check_single_ans(problem_answer,user_answer):
 
