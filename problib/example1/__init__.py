@@ -20,23 +20,20 @@ root3 = r.randint(0,10)
 x = symbols('x')
 p = ((x-root1)*(x-root2)).expand(basic=True)
 
-template_variables = {
-    'p': latex(p),
-    }
+func = cos(x)**2-sin(x)**2
 
-a1 = answer.Answer()
-a1.value = cos(x)**2-sin(x)**2
-a1.type = 'function'
-a1.variables = ['x']
-a1.domain = 'R'
-
-a2 = answer.Answer()
-a2.value = 'x+1'
-a2.type = "function"
-a2.variables = ['x','y']
+a1 = answer.Answer(
+        value=func,
+        type='function',
+        vars=['x'])
+a2 = answer.Answer(value='x+1',type='function',vars=['x'])
 
 answers = {
     'ans1': a1,
     'ans2': a2
+    }
+
+template_variables = {
+    'p': latex(p),
     }
 
