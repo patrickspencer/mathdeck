@@ -1,12 +1,20 @@
 import tornado.ioloop
 import tornado.web
+import json
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("Hello, world")
 
+class GetProblemRequest(tornado.web.RequestHandler):
+    def post(self):
+        data = json.loads(self.request.body.decode('utf-8'))
+        print('Got JSON data:', data)
+        self.write({ 'got' : 'your data' })
+
 def make_app():
     return tornado.web.Application([
+        (r"/problem/", GetProblemRequest),
         (r"/", MainHandler),
     ])
 
