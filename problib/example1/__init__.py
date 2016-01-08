@@ -1,13 +1,6 @@
 from sympy import symbols, cos, sin, latex
 from mathdeck import rand, answer
 
-metadata = {
-  'author': 'Bob Hope',
-  'institution': 'University of Missouri',
-  'subject': 'algebra',
-  'minor subject': 'polynomial equations',
-  'tags': ['simplify','roots','intervals']
-}
 
 r = rand.Random()
 
