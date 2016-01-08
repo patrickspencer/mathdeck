@@ -29,6 +29,6 @@ Goals
 License
 -------
 
-Mathdeck is licensed under the BSD license. See
-LICENSE file for more details.
+Mathdeck is licensed under the Apache 2.0 license. See LICENSE file for more
+details.
 
