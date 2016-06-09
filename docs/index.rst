@@ -82,7 +82,7 @@ following is perhaps one way:
 
    >>> from mathdeck import Problem
 
-   >>> problem = Problem('problem-library/example1.py')
+   >>> problem = Problem('problem-library/example1')
    >>> print(problem.answers)
    [<mathdeck.Answer>]
    >>> ans = problem.answers[0]
