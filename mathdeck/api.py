@@ -11,6 +11,18 @@ This module implements the Mathdeck API.
 
 """
 
+class Problem:
+    """
+    this class is the main class :class:`Problem`
+    
+    :param problem_file_path: the location of the problem file that needs to be
+        loaded relative to the default library location as set in mathconf.py
+        file.
+    """
+
+    def __init__(self, problem_file_path):
+        return NotImplemented
+
 def display_problem(file, seed):
     """
     Constructs and sends a :class:`Problem <Problem>`.
@@ -36,4 +48,3 @@ def display_problem(file, seed):
 def check_problem(module, seed):
     _seed_holding_module = type('module', (), {'_seed': seed})
     sys.modules['_seed_holding_module'] = _seed_holding_module
-
