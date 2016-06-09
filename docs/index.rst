@@ -135,7 +135,7 @@ function and seed values would look something like this:
    <!-- problem-library/example3/template1.jinja2 -->
    Find the roots of the polynomial $p(x) = {{p | format=latex}}$:
    
-When :code:`mathdeck.loadproblem` is called it uses a seed value to make
+When :code:`mathdeck.Problem.loadproblem` is called it uses a seed value to make
 sure :code:`mathdeck.random` is predictable by the computer. Say a seed
 value of 20 makes :code:`root1 = 1` and :code:`root2 = -1`
 

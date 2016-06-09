@@ -30,13 +30,19 @@ Programming Goals
 Support
 -------
 
-Source files are hosted on `Github <https://github.com/patrickspencer/mathdeck/>`_ and `PyPI <https://pypi.python.org/pypi/mathdeck/>`_.
+Source files are hosted on `Github
+<https://github.com/patrickspencer/mathdeck/>`_ and `PyPI
+<https://pypi.python.org/pypi/mathdeck/>`_.
 
-Documentation source files are found in the `docs/` folder within the source. Compiled documentation files are hosted on `Read the Docs <http://mathdeck.readthedocs.org/>`_.
+Documentation source files are found in the `docs/` folder within the
+source. Compiled documentation files are hosted on `Read the Docs
+<http://mathdeck.readthedocs.org/>`_.
 
-Issues are hosted on `Github Issues <https://github.com/patrickspencer/mathdeck/issues/>`_.
+Issues are hosted on `Github Issues
+<https://github.com/patrickspencer/mathdeck/issues/>`_.
 
-Discussion is on `Google Groups <https://groups.google.com/d/forum/mathdeck>`_.
+Discussion is on `Google Groups
+<https://groups.google.com/d/forum/mathdeck>`_.
 
 Requirements
 ------------
@@ -63,16 +69,21 @@ There are two ways to contribute:
 #. Via Github issues
 #. Sending git patches through email
 
-See `CONTRIBUTING.rst <https://github.com/patrickspencer/mathdeck/blob/master/CONTRIBUTING.rst>`_ for more information.
+See `CONTRIBUTING.rst
+<https://github.com/patrickspencer/mathdeck/blob/master/CONTRIBUTING.rst>`_
+for more information.
 
 About the name
 --------------
 
-Mathdeck is short for math display and check, the program's two main functions.
+Mathdeck is short for math display and check, the program's two main
+functions.
 
 License
 -------
 
 Mathdeck is licensed under the Apache 2.0 license. See
-`LICENSE <https://github.com/patrickspencer/mathdeck/blob/master/LICENSE>`_ file for more details.
+`LICENSE
+<https://github.com/patrickspencer/mathdeck/blob/master/LICENSE>`_ file
+for more details.
 
