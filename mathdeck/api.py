@@ -8,7 +8,6 @@ This module implements the Mathdeck API.
 
 :copyright: (c) 2015 by Patrick Spencer.
 :license: Apache 2.0, see LICENSE for more details.
-
 """
 
 class Problem:

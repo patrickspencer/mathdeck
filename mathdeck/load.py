@@ -6,9 +6,8 @@ mathdeck.loadproblem
 
 This module loads a problem file as a module.
 
-:copyright: (c) 2015 by Patrick Spencer.
+:copyright: (c) 2014-2016 by Patrick Spencer.
 :license: Apache 2.0, see ../LICENSE for more details.
-
 """
 
 import os

@@ -9,7 +9,6 @@ This module accesses the settings file located at
 
 :copyright: (c) 2015 by Patrick Spencer.
 :license: Apache 2.0, see ../LICENSE for more details.
-
 """
 
 import json

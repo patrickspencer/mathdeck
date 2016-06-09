@@ -7,9 +7,8 @@ mathdeck.display
 This module displays a problem by running the main
 problem file through a given template.
 
-:copyright: (c) 2015 by Patrick Spencer.
+:copyright: (c) 2014-2016 by Patrick Spencer.
 :license: Apache 2.0, see ../LICENSE for more details.
-
 """
 
 import os

@@ -1,3 +1,16 @@
+# -*- coding: utf-8 -*-
+
+"""
+mathdeck.server
+~~~~~~~~~~~~~~~
+
+An http server to communicate with mathdeck. This is to faciliate the
+use of mathdeck with non-python programs.
+
+:copyright: (c) 2014-2016 by Patrick Spencer.
+:license: Apache 2.0, see LICENSE for more details.
+"""
+
 import tornado.ioloop
 import tornado.web
 import json
