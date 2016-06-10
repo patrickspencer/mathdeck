@@ -67,7 +67,11 @@ def make_seed_holding_module(seed):
     """
     makes a module to hold the given seed value so other functions
     can retrieve seed value without begin given the seed directly.
+
+    The reason for making a holding module for the seed is this: when
+    you load a module it is hard to inject a variable (like that seed
+    value) into that module. It is easier for that newly loaded module
+    to reference a variable in an already existing module.
     """
     _seed_holding_module = type('module', (), {'_seed': seed})
     sys.modules['_seed_holding_module'] = _seed_holding_module
-
