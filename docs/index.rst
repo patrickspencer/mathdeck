@@ -19,26 +19,32 @@ Quick tour
 .. code-block:: python
 
    # problem-library/example1/__init__.py
-   from mathdeck import Problem, Answer
+   from mathdeck import Answer
 
    ans1 = Answer(value=5)
-   Problem.addAnswer(ans1)
+   ans2 = Answer(value=101)
+   _answers = [ans1, ans2]
 
-The answers can be accessed in `problems.answers`:
+This makes two answers of value 5 and 101 respectively and loads into
+the mathdeck hook :code:`_answers`.  The answers can be accessed by the
+:code:`answers` attribute in an instance of a problem file loaded
+by :code:`Problem(module_path)`:
 
 .. code-block:: python
 
    >>> from mathdeck import Problem
    >>> problem = Problem('problem-library/example1')
    >>> print(problem.answers)
-   [<mathdeck.Answer>]
+   [<mathdeck.Answer>, <mathdeck.Answer>]
    >>> print(type.answers[0])
    <mathdeck.Answer>
    >>> print(type.answers[0].value)
    5
+   >>> print(type.answers[1].value)
+   101
 
-We can check the answer against a predefined answer. `0` means not a
-match and `1` means is a match.
+We can check the answer against a predefined answer. 0 means not a
+match and 1 means is a match.
 
 .. code-block:: python
 
@@ -46,15 +52,14 @@ match and `1` means is a match.
    >>> problem = Problem('problem-library/example1')
    >>> print(problem.answers)
    5
-   >>> problem.check(problem.answers,'4')
+   >>> problem.check(problem.answers[0], Answer(value=4))
    0
-   >>> problem.check(problem.answers,'5')
+   >>> problem.check(problem.answers[0], Answer(value=5))
+   1
+   >>> problem.check(problem.answers[1], Answer(value=101))
    1
 
 Example problem file
-
-*Note*: Not sure how to define an answer within a problem file. The
-following is perhaps one way:
 
 .. code-block:: python
 
@@ -64,7 +69,8 @@ following is perhaps one way:
    ans1 = Answer(value=5)
    a = (ans1.value)*3
 
-   Problem.addAnswer(ans1)
+   _answers = [ans1]
+   _template_vars = {'temp_var': a}
 
 .. code-block:: python
 
@@ -72,11 +78,28 @@ following is perhaps one way:
    >>> problem = Problem('problem-library/example1')
    >>> print(problem.answers)
    [<mathdeck.Answer>]
-   
+
+Let's make a couple templates so we know how to display the question. Mathdeck uses `Jinja2 templates <http://jinja.pocoo.org/>`_ for its templating system.
+
 .. sourcecode:: html+jinja
 
-   <!-- problem-library/example2/template1.jinja2 -->
-   What is {{a}} divided by 3?
+   <!-- problem-library/example2/templates/default.jinja2 -->
+   What is {{ temp_var }} divided by 3?
+
+.. sourcecode:: html+jinja
+
+   <!-- problem-library/example2/templates/template2.jinja2 -->
+   What is {{ temp_var }} times 6 divided by 3 and then divided by 2?
+   
+Our module file directory looks like this now:
+
+::
+
+   # problem-library/example2/
+   __init__.py
+   templates/
+   ├── default.jinja2
+   └── template2.jinja2
    
 .. code-block:: python
 
@@ -90,8 +113,10 @@ following is perhaps one way:
    5
    >>> print(ans.type)
    Integer
-   >>> problem.display(template=template1.jinja2)
+   >>> problem.display()
    What is 15 divided by 3?
+   >>> problem.display(template=template2.jinja2)
+   What is 15 times 6 divided by 3 and then divided by 2?
 
 A more advanced problem file using sympy, the display function, the check
 function and seed values would look something like this:
@@ -128,12 +153,13 @@ function and seed values would look something like this:
      'label': 'second_ans'
    })
 
-   Problem.addAnswer(ans1, ans2)
+   _answers = [ans1, ans2]
+   _template_vars = {'poly': p}
 
 .. sourcecode:: html+jinja
 
-   <!-- problem-library/example3/template1.jinja2 -->
-   Find the roots of the polynomial $p(x) = {{p | format=latex}}$:
+   <!-- problem-library/example3/templates/default.jinja2 -->
+   Find the roots of the polynomial $p(x) = {{poly | format=latex}}$:
    
 When :code:`mathdeck.Problem.loadproblem` is called it uses a seed value to make
 sure :code:`mathdeck.random` is predictable by the computer. Say a seed
@@ -143,7 +169,7 @@ value of 20 makes :code:`root1 = 1` and :code:`root2 = -1`
 
    >>> from mathdeck import Problem
    >>> problem = Problem('problem-library/example1')
-   >>> problem.display(template=template1.jinja2, seed=20)
+   >>> problem.display(seed=20)
    Find the roots of the polynomial $p(x) = x^2-1$
    >>> problem.check({'first_ans': -1, 'second_ans': 3}, seed=20)
    # first_ans is correct but second_ans is incorrect
@@ -157,6 +183,7 @@ Contents
    :maxdepth: 2
 
    api
+   problemspec
    install
    
 Features
