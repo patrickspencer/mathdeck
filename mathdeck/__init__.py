@@ -21,5 +21,3 @@ __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2014-2016 Patrick Spencer'
 
 from .api import *
-
-
