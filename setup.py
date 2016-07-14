@@ -16,7 +16,7 @@ with open('AUTHORS.rst', 'r', 'utf-8') as f:
 
 setup(
     name='mathdeck',
-    version='0.0.1-planning',
+    version='0.0.2-planning',
     author='Patrick Spencer',
     license='Apache 2.0',
     url='https://github.com/patrickspencer/mathdeck',
@@ -48,8 +48,9 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     install_requires=[
-        'sympy>=0.7.5',
+        'sympy==1.0.0',
         'Jinja2==2.7.3',
+        'tornado==4.3',
     ]
 )
 
