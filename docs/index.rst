@@ -90,7 +90,7 @@ Let's make a couple templates so we know how to display the question. Mathdeck u
 
    <!-- problem-library/example2/templates/template2.jinja2 -->
    What is {{ temp_var }} times 6 divided by 3 and then divided by 2?
-   
+
 Our module file directory looks like this now:
 
 ::
@@ -100,7 +100,7 @@ Our module file directory looks like this now:
    templates/
    ├── default.jinja2
    └── template2.jinja2
-   
+
 .. code-block:: python
 
    >>> from mathdeck import Problem
@@ -160,7 +160,7 @@ function and seed values would look something like this:
 
    <!-- problem-library/example3/templates/default.jinja2 -->
    Find the roots of the polynomial $p(x) = {{poly | format=latex}}$:
-   
+
 When :code:`mathdeck.Problem.loadproblem` is called it uses a seed value to make
 sure :code:`mathdeck.random` is predictable by the computer. Say a seed
 value of 20 makes :code:`root1 = 1` and :code:`root2 = -1`
@@ -185,7 +185,7 @@ Contents
    api
    problemspec
    install
-   
+
 Features
 --------
 
