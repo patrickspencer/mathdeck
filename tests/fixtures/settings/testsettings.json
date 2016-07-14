@@ -1,0 +1,6 @@
+{
+  "problem_libs": {
+    "main_lib": "/main/lib/dir/",
+    "alt_lib": "/another/problem/lib/dir/"
+  }
+}
