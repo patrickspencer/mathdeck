@@ -16,7 +16,7 @@ with open('AUTHORS.rst', 'r', 'utf-8') as f:
 
 setup(
     name='mathdeck',
-    version='0.0.2-planning',
+    version='0.0.1-planning',
     author='Patrick Spencer',
     license='Apache 2.0',
     url='https://github.com/patrickspencer/mathdeck',
