@@ -10,17 +10,8 @@ This module implements the Mathdeck API.
 :license: Apache 2.0, see LICENSE for more details.
 """
 
-class Problem:
-    """
-    this class is the main class :class:`Problem`
-    
-    :param problem_file_path: the location of the problem file that needs to be
-        loaded relative to the default library location as set in mathconf.py
-        file.
-    """
-
-    def __init__(self, problem_file_path):
-        return NotImplemented
+from mathdeck.problem import *
+from mathdeck.answer import *
 
 def display_problem(file, seed):
     """
