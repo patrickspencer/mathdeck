@@ -185,6 +185,7 @@ Contents
    api
    problemspec
    install
+   settings
 
 Features
 --------
