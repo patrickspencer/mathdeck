@@ -14,10 +14,10 @@ import os
 import sys
 
 class Answer():
-    value = ""
-    type = ""
-    variables = []
+    """
+    :param value: the value of the answer. This could be an integer, string,
+    whatever.
+    """
 
-    def __init__(self):
-        pass
-
+    def __init__(self, value):
+        self.value = value
