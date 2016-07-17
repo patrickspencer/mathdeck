@@ -21,10 +21,5 @@ class TestSettingsModule(unittest.TestCase):
         lib_name = problibs.get_dir(settings_file = test_settings, lib_name = "alt_lib")
         self.assertEqual(lib_name, '/another/problem/lib/dir/')
 
-    def test_opening_real_conf(self):
-        problibs = settings.ProblemLibs()
-        test_settings = os.path.join(cur_dir, 'fixtures', 'settings', 'testsettings.json')
-        lib_name = problibs.get_dir(settings_file = test_settings)
-
 if __name__ == '__main__':
     unittest.main()
