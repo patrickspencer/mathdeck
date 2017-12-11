@@ -11,6 +11,7 @@ This module implements the Mathdeck API.
 """
 
 from mathdeck.problem import *
+from mathdeck.load import *
 from mathdeck.answer import *
 
 def display_problem(file, seed):

@@ -73,9 +73,14 @@ def load_module_from_path(path):
     # for python 3.3 and 3.4
     vinfmaj = sys.version_info[0]
     vinfmin = sys.version_info[1]
+
     if vinfmaj == 3 and (vinfmin == 3 or vinfmin == 4):
         from importlib.machinery import SourceFileLoader
         problem_module = SourceFileLoader('prob_mod_pkg', path, '__init__.py').load_module()
+
+    if vinfmaj == 3 and (vinfmin == 3 or vinfmin == 5):
+        from importlib.machinery import SourceFileLoader
+        problem_module = SourceFileLoader('prob_mod_pkg', path + '/__init__.py').load_module()
 
     try:
         problem_module.answers
