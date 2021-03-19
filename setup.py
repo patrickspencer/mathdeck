@@ -49,7 +49,7 @@ setup(
     ],
     install_requires=[
         'sympy==1.0.0',
-        'Jinja2==2.7.3',
+        'Jinja2==2.11.3',
         'tornado==4.3',
     ]
 )
